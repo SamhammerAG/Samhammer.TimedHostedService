@@ -9,7 +9,7 @@ namespace Samhammer.TimedHostedService
 {
     public abstract class TimedHostedService<T> : IHostedService, IDisposable
     {
-        protected virtual TimeSpan StartDelay => TimeSpan.MinValue;
+        protected virtual TimeSpan StartDelay => TimeSpan.Zero;
 
         protected virtual TimeSpan ExecutionInterval => TimeSpan.FromSeconds(60);
 
