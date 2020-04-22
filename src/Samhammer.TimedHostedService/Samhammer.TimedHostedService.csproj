@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
-    <PackageProjectUrl>https://github.com/SamhammerAG/Samhammer.Authentication</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/SamhammerAG/Samhammer.Authentication</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/SamhammerAG/Samhammer.TimedHostedService</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SamhammerAG/Samhammer.TimedHostedService</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Company>Samhammer AG</Company>
     <Authors>Samhammer AG</Authors>
@@ -20,7 +20,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
