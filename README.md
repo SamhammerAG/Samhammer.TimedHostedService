@@ -59,8 +59,4 @@ Note:
 ## Contribute
 
 #### How to publish a nuget package
-- set package version in Samhammer.TimedHostedService.csproj
-- create git tag
-- dotnet pack -c Release
-- nuget push .Samhammer.TimedHostedService\bin\Release\Samhammer.TimedHostedService.*.nupkg NUGET_API_KEY -src https://api.nuget.org/v3/index.json
-- (optional) nuget setapikey NUGET_API_KEY -source https://api.nuget.org/v3/index.json
+- Create a tag and let the github action do the publishing for you
