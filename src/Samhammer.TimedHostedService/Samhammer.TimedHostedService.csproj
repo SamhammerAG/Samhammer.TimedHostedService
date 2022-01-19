@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <PackageProjectUrl>https://github.com/SamhammerAG/Samhammer.TimedHostedService</PackageProjectUrl>
     <RepositoryUrl>https://github.com/SamhammerAG/Samhammer.TimedHostedService</RepositoryUrl>
