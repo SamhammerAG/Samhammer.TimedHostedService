@@ -1,5 +1,3 @@
-﻿[![Build Status](https://travis-ci.com/SamhammerAG/Samhammer.TimedHostedService.svg?branch=master)](https://travis-ci.com/SamhammerAG/Samhammer.TimedHostedService)
-
 ## Samhammer.TimedHostedService
 
 This package provides a hosted service that can run periodically.
