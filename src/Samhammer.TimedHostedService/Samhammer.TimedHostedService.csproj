@@ -9,7 +9,7 @@
     <Company>Samhammer AG</Company>
     <Authors>Samhammer AG</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Description>Hosted service that can run periodically</Description>
+    <Description>hostedservice that can run periodically</Description>
   </PropertyGroup>
 
   <ItemGroup>
