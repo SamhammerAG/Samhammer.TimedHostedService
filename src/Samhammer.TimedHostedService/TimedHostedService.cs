@@ -47,10 +47,10 @@ namespace Samhammer.TimedHostedService
         {
             try
             {
-                Logger.LogDebug("TimedHostedService {HostedService} tick starting.", typeof(T));
+                Logger.LogDebug("TimedHostedService {HostedService} tick starting", typeof(T));
                 if (OnlySingleInstance && IsRunning)
                 {
-                    Logger.LogDebug("TimedHostedService {HostedService} tick stopping, because one instance is already running.", typeof(T));
+                    Logger.LogDebug("TimedHostedService {HostedService} tick stopping, because one instance is already running", typeof(T));
                     return;
                 }
 
@@ -59,11 +59,11 @@ namespace Samhammer.TimedHostedService
                 await OnRunSuccessful();
                 IsRunning = false;
 
-                Logger.LogDebug("TimedHostedService {HostedService} tick finished.", typeof(T));
+                Logger.LogDebug("TimedHostedService {HostedService} tick finished", typeof(T));
             }
             catch (Exception ex)
             {
-                Logger.LogError(ex, "TimedHostedService {HostedService} tick failed with an error, aborting current tick.", typeof(T));
+                Logger.LogError(ex, "TimedHostedService {HostedService} tick failed with an error, aborting current tick", typeof(T));
                 await OnError();
                 IsRunning = false;
             }
@@ -94,7 +94,7 @@ namespace Samhammer.TimedHostedService
         {
             await OnStopping();
 
-            Logger.LogInformation("TimedHostedService {HostedService} is stopping.", typeof(T));
+            Logger.LogInformation("TimedHostedService {HostedService} is stopping", typeof(T));
 
             Timer?.Change(Timeout.Infinite, 0);
         }

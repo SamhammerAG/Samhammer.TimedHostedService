@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <CodeAnalysisRuleSet>..\stylecop.ruleset</CodeAnalysisRuleSet>
     <PackageProjectUrl>https://github.com/SamhammerAG/Samhammer.TimedHostedService</PackageProjectUrl>
     <RepositoryUrl>https://github.com/SamhammerAG/Samhammer.TimedHostedService</RepositoryUrl>
@@ -15,16 +15,13 @@
   <ItemGroup>
     <AdditionalFiles Include="..\stylecop.json" />
   </ItemGroup>
-
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
-
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.376">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
